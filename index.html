@@ -6,20 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karuna Seeds Yoga</title>
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <!-- slick cdn -->
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick/slick.css">
+    <!-- hover css -->
+    <link rel="stylesheet" href="./hover.css">
+    <!-- my css -->
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="favＦicon.ico">
+    <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../web/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
     <!-- nav section -->
-    <header id="header" class="title_header">
-        <div class="title_wrap">
+    <header id="header" class="header">
+        <div class="header_wrap fixed">
             <div class="logo">
-                <img src="./img/Karunaseeds.png" alt="karuna seeds yoga logo">
-                <h1>KARUNA <br> SEEDS <br> YOGA</h1>
+                <h1><img src="./img/Karunaseeds.png" alt="karuna seeds yoga logo"></h1>
             </div>
             <div class="nav">
                 <ul>
@@ -27,31 +33,31 @@
                         <a href="#">HOME</a>
                     </li>
                     <li>
-                        <a href="#">CLASSES</a>
+                        <a href="#events">EVENTS</a>
                     </li>
                     <li>
-                        <a href="#">TEACHERS</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">RESOURCES</a>
+                        <a href="#testimonials">TESTIMONIALS</a>
                     </li>
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a href="#schedule">SCHEDULE</a>
                     </li>
                 </ul>
             </div>
         </div>
         <img src="./img/banner01.jpg" alt="banner01" class="banner">
-        <h5>WELCOME!</h5>
+        <h5 class="wel">WELCOME!</h5>
     </header>
     <!-- main section -->
     <main id="main">
         <!-- events section -->
-        <section class="events_section">
+        <section id="events" class="events_section">
             <h2 class="h2_events">UPCOMING</h2>
             <div class="events_wrap">
                 <ul class="events">
-                    <li class="events_items_left">
+                    <li class="events_items_left smv" data-move-x="-500px">
                         <img class="mask_img" src="./img/events_left.jpg" alt="eventsleft">
                         <a href="#">
                             <h3 class="events_title">Laying the Foundation
@@ -60,7 +66,7 @@
                         </a>
                         </img>
                     </li>
-                    <li class="events_items_main">
+                    <li class="events_items_main smv" data-move-x data-move-x="-500px"="200px">
                         <img class="mask_img" src="./img/events01.jpg" alt="events01">
                         <a href="#">
                             <h3 class="events_title">Walking the Path
@@ -69,7 +75,7 @@
                         </a>
                         </img>
                     </li>
-                    <li class="events_items_right ">
+                    <li class="events_items_right smv" data-move-x="500px">
                         <img class="mask_img" src="./img/events_right.jpg" alt="eventsright">
                         <a href="#">
                             <h3 class="events_title">2022 RYT200 hr
@@ -89,18 +95,18 @@
             </div>
         </section>
         <!-- about section -->
-        <div class="about_img">
-            <img class="mask_img" src="./img/about.jpg" alt="yoga pose">
+        <div id="about" class="about_img bgimg_fixed">
+            <!-- <img class="mask_img" src="./img/about.jpg" alt="yoga pose"> -->
             <h2>ABOUT US</h2>
         </div>
         <section class="about_section">
             <div class="desc_wrap">
                 <ul class="desc">
                     <li class="desc_item">
-                        <figure>
+                        <figure class="smv" data-move-x="-350px">
                             <img class="mask_img po_right" src="./img/about01.jpg" alt="yoga pose of king pigeon">
                         </figure>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius vel qui animi, temporibus necessitatibus praesentium delectus saepe facere, tempore similique placeat cum. Quo, deserunt ducimus odit quibusdam excepturi voluptates
+                        <p class="smv" data-move-x="350px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius vel qui animi, temporibus necessitatibus praesentium delectus saepe facere, tempore similique placeat cum. Quo, deserunt ducimus odit quibusdam excepturi voluptates
                             molestias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius vel qui animi, temporibus necessitatibus praesentium delectus saepe facere, tempore similique placeat cum. Quo, deserunt ducimus odit quibusdam excepturi
                             voluptates molestias? <br>orem ipsum, dolor sit amet consectetur adipisicing elit. Eius vel qui animi, temporibus necessitatibus praesentium delectus saepe facere, tempore similique placeat cum. Quo, deserunt ducimus odit quibusdam
                             excepturi voluptates molestias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius vel qui animi, temporibus necessitatibus praesentium delectus saepe facere, tempore similique placeat cum. Quo, deserunt ducimus
@@ -110,120 +116,113 @@
                 </ul>
                 <ul class="desc">
                     <li class="desc_item desc_item_reverse">
-                        <figure>
+                        <figure class="smv" data-move-x="350px">
                             <img class="mask_img  po_left" src="./img/about02.jpg" alt="two people sitting meditation">
                         </figure>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere debitis maiores veniam, illo sequi enim qui molestias animi. Dicta dolor possimus reiciendis nesciunt culpa facere hic repudiandae ratione, nam rem. <br>Lorem ipsum
+                        <p class="smv" data-move-x="-350px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere debitis maiores veniam, illo sequi enim qui molestias animi. Dicta dolor possimus reiciendis nesciunt culpa facere hic repudiandae ratione, nam rem. <br>Lorem ipsum
                             dolor sit amet, consectetur adipisicing elit. Facere debitis maiores veniam, illo sequi enim qui molestias animi. Dicta dolor possimus reiciendis nesciunt culpa facere hic repudiandae ratione, nam rem.</p>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- teachers section -->
-        <div class="teachers_img">
-            <img class="mask_img" src="./img/teachers.jpg" alt="yoga pose_twist">
-            <h2>MEET OUR TEACHERS</h2>
+        <div id="teachers" class="teachers_img bgimg_fixed">
+            <!-- <img class="mask_img" src="./img/teachers.jpg" alt="yoga pose_twist"> -->
+            <h2>OUR INSTRUCTOR</h2>
         </div>
         <section class="teachers_section">
             <div class="teachers_wrap">
-                <ul class="tch">
-                    <li class="tch_items"><img src="./img/tch01.jpg" alt="a teacher has her palms together infront her heart" class="mask_img">
-                        <a href="#">
-                            <h3 class="">Even Wang</h3>
+                <ul class="tch slick">
+                    <li class="tch_items smv" data-move-x="-500px">
+                        <img src="./img/tch01.jpg" alt="a teacher has her palms together infront her heart" class="mask_img hvr-grow">
+                        <div class="tit_wrap">
+                            <a href="#" class="">
+                                <h3 class="">Even Wang</h3>
+                            </a>
                             <p class="">Yoga teacher, Mandala drawing</p>
-                        </a>
+                        </div>
                     </li>
-                    <li class="tch_items"><img src="./img/tch02.jpg" alt="a teacher resting her hand on her knee" class="mask_img">
-                        <a href="#">
-                            <h3 class="">Phillip Eilliot Quercia</h3>
+                    <li class="tch_items smv" data-move-x="-200px">
+                        <img src="./img/tch02.jpg" alt="a teacher resting her hand on her knee" class="mask_img hvr-grow">
+                        <div class="tit_wrap">
+                            <a href="#">
+                                <h3 class="">Phillip Eilliot Quercia</h3>
+                            </a>
                             <p class="">Kirtan, Philosophy</p>
-                        </a>
+                        </div>
                     </li>
-                    <li class="tch_items"><img src="./img/tch03.jpg" alt="a teacher doing a yoga posture called warrior 3" class="mask_img">
-                        <a href="#">
-                            <h3 class="">Karina Arenas Bonansea</h3>
+                    <li class="tch_items smv" data-move-x="200px">
+                        <img src="./img/tch03.jpg" alt="a teacher doing a yoga posture called warrior 3" class="mask_img hvr-grow">
+                        <div class="tit_wrap">
+                            <a href="#">
+                                <h3 class="">Karina Arenas Bonansea</h3>
+                            </a>
                             <p class="">Lead yoga teacher</p>
-                        </a>
+                        </div>
                     </li>
-                    <li class="tch_items"><img src="./img/tch04.jpg" alt="a teacher doing a forward band yoga posture" class="mask_img">
-                        <a href="#">
-                            <h3 class="">Janet Chen Azusa</h3>
+                    <li class="tch_items smv" data-move-x="500px">
+                        <img src="./img/tch04.jpg" alt="a teacher doing a forward band yoga posture" class="mask_img hvr-grow">
+                        <div class="tit_wrap">
+                            <a href="#">
+                                <h3 class="">Janet Chen Azusa</h3>
+                            </a>
                             <p class="">Translator, Yoga teacher</p>
-                        </a>
+                        </div>
                     </li>
-                    <li class="tch_items"><img src="./img/tch05.jpg" alt="a teacher doing meditation" class="mask_img">
-                        <a href="#">
-                            <h3 class="">Jordi Mosoll Allué </h3>
+                    <li class="tch_items smv">
+                        <img src="./img/tch05.jpg" alt="a teacher doing meditation" class="mask_img hvr-grow">
+                        <div class="tit_wrap">
+                            <a href="#">
+                                <h3 class="">Jordi Mosoll Allué </h3>
+                            </a>
                             <p class="">Anatomy</p>
-                        </a>
+                        </div>
                     </li>
                 </ul>
-            </div>
-            <div class="arrow">
-                <img class="mask_img arrow_left" src="./img/angle-left.png" alt="arrow_left">
-                <img class="mask_img arrow_right" src="./img/angle-right.png" alt="arrow_right">
-            </div>
+                <!-- <div class="arrow">
+                    <img class="mask_img arrow_left" src="./img/angle-left.png" alt="arrow_left">
+                    <img class="mask_img arrow_right" src="./img/angle-right.png" alt="arrow_right">
+                </div> -->
         </section>
 
-        <div class="testimonials_img">
-            <img class="mask_img" src="./img/testimonials.jpg" alt="yoga pose_new moon">
+        <div id="testimonials" class="testimonials_img bgimg_fixed">
+            <!-- <img class="mask_img" src="./img/testimonials.jpg" alt="yoga pose_new moon"> -->
             <h2>TESTIMONIALS</h2>
         </div>
         <section class="testimonials_section">
             <div class="test_wrap">
                 <ul class="test">
                     <li class="test_items">
-                        <a href="#"><img src="./img/test00.jpg" alt="" class="center mask_img test_img"></a>
+                        <img src="./img/test00.jpg" alt="" class="mask_img test_img">
                     </li>
                     <li class="test_items">
-                        <a href="#"><img src="./img/test01.jpg" alt="" class="center mask_img test_img"></a>
+                        <img src="./img/test01.jpg" alt="" class="mask_img test_img">
                     </li>
                     <li class="test_items">
-                        <a href="#"><img src="./img/test00.jpg" alt="" class="center mask_img test_img"></a>
+                        <img src="./img/test00.jpg" alt="" class="mask_img test_img">
                     </li>
                     <li class="test_items">
-                        <a href="#"><img src="./img/test03.jpg" alt="" class="center mask_img test_img"></a>
+                        <img src="./img/test03.jpg" alt="" class="mask_img test_img">
                     </li>
                     <li class="test_items">
-                        <a href="#"><img src="./img/test01.jpg" alt="" class="center mask_img test_img"></a>
+                        <img src="./img/test01.jpg" alt="" class="mask_img test_img">
                     </li>
                 </ul>
-                <div class="slick_list">
-                    <ul>
-                        <li class="slick_dots">
-                            <a href="#"></a>
-                        </li>
-                        <li class="slick_dots">
-                            <a href="#"></a>
-                        </li>
-                        <li class="slick_dots">
-                            <a href="#"></a>
-                        </li>
-                        <li class="slick_dots">
-                            <a href="#"></a>
-                        </li>
-                        <li class="slick_dots">
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
 
         </section>
         <!-- schedule section -->
-        <section class="schedule_section">
-            <h2 class="schedule">Schedule</h2>
-            <img src="./img/calendar.png" alt="walking the path calendar" class="mask_img calendar">
-            <img src="./img/logo01_640px.png" alt="karunaseedsyoga logo" class="mask_img logo01">
-            <img src="./img/logo02_640px.png" alt="karunaseedsyoga logo" class="mask_img logo02">
+        <section id="schedule" class="schedule_section">
+            <h2 class="smv schedule" data-move-y="300px">Schedule</h2>
+            <img src="./img/calendar.png" alt="walking the path calendar" class="smv mask_img calendar" data-move-y="300px">
+            <img src="./img/logo01_640px.png" alt="karunaseedsyoga logo" class="move_downleft mask_img logo01">
+            <img src="./img/logo02_640px.png" alt="karunaseedsyoga logo" class="move_upright mask_img logo02">
         </section>
     </main>
     <footer>
         <div class="title_wrap">
             <div class="logo">
                 <img src="./img/Karunaseeds.png" alt="karuna seeds yoga logo">
-                <h1>KARUNA <br> SEEDS <br> YOGA</h1>
             </div>
         </div>
 
@@ -288,9 +287,16 @@
         <small>&copy; 2021 Karuna Seeds Yoga. All rights reserved.</small>
 
     </footer>
-    <!-- slick-carousel -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../web/script.js"></script>
+    <!-- jquery cdn 原生碼 -->
+    <script src="./jquery-3.6.0.js"></script>
+    <!-- lightbox js -->
+    <script src="./lightbox/js/lightbox.js"></script>
+    <!-- slick js -->
+    <script src="./slick/slick.js"></script>
+    <!-- smoove滾動載入 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- 自己寫的jq -->
+    <script src="script.js"></script>
 </body>
 
 </html>
